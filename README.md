@@ -82,24 +82,3 @@ If you try to print a standard masonry layout on an A4 sheet, you often get:
 
 2. **Run it**:
 Simply open `index.html` in any modern web browser. No `npm install` or build steps required!
-
----
-
-## ✨ Limitations & Notes
-
-* **Browser Memory**: Processing hundreds of high-resolution (20MB+) images simultaneously might hit browser memory limits.
-* **Aspect Ratios**: The algorithm works best with a mix of landscape and portrait images.
-* **Output**: Currently exports in PNG format to preserve quality.
-
----
-
-## 📖 License
-
-MIT License. See [LICENSE](https://www.google.com/search?q=LICENSE) for details.
-
----
-
-## 🙏 Credits
-
-* Built entirely with **Vanilla JavaScript**.
-* Logic inspired by the "Justified Layout" algorithms used by Flickr and Google Photos, adapted for fixed-print dimensions.

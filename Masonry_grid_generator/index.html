@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create your own Masonry Grid</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:;base64,=">
+</head>
+<body>
+
+    <div class="main-container">
+        <h1 class="app-title">Create your own Masonry Grid</h1>
+
+        <div class="workspace">
+            
+            <div id="input-section">
+                <div id="drop-zone" class="drop-zone">
+                    <p class="drop-text">Drag & Drop images here</p>
+                    <p class="drop-subtext">or</p>
+                    <button id="upload-btn" class="btn btn-primary">Upload images</button>
+                    <input type="file" id="file-input" multiple accept="image/png, image/jpeg, image/webp" hidden>
+                </div>
+
+                <div class="controls-container">
+                    <div class="control-group">
+                        <label for="format-select">Output Format</label>
+                        <select id="format-select">
+                            <option value="a4-v">A4 Vertical (2480 x 3508 px)</option>
+                            <option value="a4-h">A4 Horizontal (3508 x 2480 px)</option>
+                            <option value="a3-v">A3 Vertical (3508 x 4960 px)</option>
+                            <option value="a3-h">A3 Horizontal (4960 x 3508 px)</option>
+                            <option value="a5-v">A5 Vertical (1748 x 2480 px)</option>
+                            <option value="a5-h">A5 Horizontal (2480 x 1748 px)</option>
+                            <option value="custom">Custom Dimensions...</option>
+                        </select>
+                    </div>
+
+                    <div id="custom-panel" class="custom-panel hidden">
+                        <div class="input-wrapper">
+                            <label>Width (px)</label>
+                            <input type="number" id="custom-width" value="1920" step="10">
+                        </div>
+                        <div class="input-wrapper">
+                            <label>Height (px)</label>
+                            <input type="number" id="custom-height" value="1080" step="10">
+                        </div>
+                    </div>
+                </div>
+
+                <div id="file-count" class="file-count hidden">0 images selected</div>
+                
+                <button id="start-btn" class="btn btn-action hidden">Generate Grid</button>
+            </div>
+
+            <div id="processing-section" class="hidden">
+                <p>Processing images...</p>
+                <div class="progress-bar-container">
+                    <div id="progress-bar" class="progress-bar"></div>
+                </div>
+            </div>
+
+            <div id="result-section" class="hidden">
+                <div class="preview-wrapper">
+                    <img id="preview-image" alt="Masonry Preview">
+                </div>
+                
+                <div class="action-buttons">
+                    <button id="reset-btn" class="btn btn-reset">Reset</button>
+                    <button id="download-btn" class="btn btn-download">Download</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

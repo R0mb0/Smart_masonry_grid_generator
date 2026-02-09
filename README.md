@@ -77,7 +77,7 @@ If you try to print a standard masonry layout on an A4 sheet, you often get:
 
 1. **Clone the repository**:
    ```bash
-   git clone [https://github.com/R0mb0/Smart_masonry_grid_generator](https://github.com/R0mb0/Smart_masonry_grid_generator.git)
+   git clone https://github.com/R0mb0/Smart_masonry_grid_generator.git
     ```
 
 2. **Run it**:

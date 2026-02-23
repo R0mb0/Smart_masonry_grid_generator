@@ -82,3 +82,11 @@ If you try to print a standard masonry layout on an A4 sheet, you often get:
 
 2. **Run it**:
 Simply open `index.html` in any modern web browser. No `npm install` or build steps required!
+
+<a href="https://github.com/R0mb0/Crafted_with_AI">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github.com/R0mb0/Crafted_with_AI/blob/main/Badge/SVG/CraftedWithAIDark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://github.com/R0mb0/Crafted_with_AI/blob/main/Badge/SVG/NotMadeByAILight.svg">
+    <img alt="Not made by AI" src="https://github.com/R0mb0/Crafted_with_AI/blob/main/Badge/SVG/NotMadeByAIDefault.svg">
+  </picture>
+</a>
